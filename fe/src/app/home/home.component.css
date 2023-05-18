@@ -1,0 +1,19 @@
+/* Angular Material */
+
+.example-card {
+  width: 400px;
+  margin: 1rem;
+  background-color: blanchedalmond;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+/* This is to center the card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+<div class="container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>
+        <div style="margin-bottom: 1rem !important" class="mat-headline-1">
+          {{ post.title }}
+        </div>
+        <div>
+          by
+          <a [routerLink]="['/profile/', post.username]">
+            {{ post.username }}</a
+          >
+        </div>
+      </mat-card-title>
+    </mat-card-header>
+    <hr style="border: solid" />
+
+    <mat-card-content>
+      <p class="mat-headline-5" [innerHTML]="post.content"></p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- <div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-8">
+        <h1 class="blog-title">{{ post.title }}</h1>
+        <span>
+          <p>by {{ post.username }}</p>
+        </span>
+        <hr />
+        <p [innerHTML]="post.content"></p>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div> -->

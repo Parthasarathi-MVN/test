@@ -1,0 +1,52 @@
+<!-- <div class="containers">
+  <div class="logo">
+    <a [routerLink]="'/'">
+      <img src="assets/logo.png" alt="test" width="130" />
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <div class="logo" *ngIf="!isAuthenticated()">
+        <li><a [routerLink]="'/login'">Login</a></li>
+        <li><a [routerLink]="'/register'">Register</a></li>
+      </div>
+      <li>
+        <a [routerLink]="'/my-posts'" *ngIf="isAuthenticated()">My Posts</a>
+      </li>
+      <li>
+        <a [routerLink]="'/add-post'" *ngIf="isAuthenticated()">Add Post</a>
+      </li>
+      <li>
+        <a [routerLink]="'/profile'" *ngIf="isAuthenticated()" href=""
+          >Profile</a
+        >
+      </li>
+      <li>
+        <a *ngIf="isAuthenticated()" (click)="logout()" href="">Logout</a>
+      </li>
+    </ul>
+  </nav>
+</div> -->
+
+<!-- Angular Material  -->
+
+<mat-toolbar class="navbar" color="primary">
+  <div>
+    <a [routerLink]="'/'">
+      <img src="assets/logo.png" alt="test" width="130" />
+    </a>
+  </div>
+  <div class="logo" *ngIf="!isAuthenticated()">
+    <a [routerLink]="'/login'" routerLinkActive="active" #rla="routerLinkActive"
+      >Login<span [class.active-span]="rla.isActive"></span
+    ></a>
+
+    <a [routerLink]="'/register'" mat-mdc-button-touch-target>Register</a>
+  </div>
+  <div *ngIf="isAuthenticated()">
+    <a [routerLink]="'/my-posts'">My Posts</a>
+    <a [routerLink]="'/add-post'">Add Post</a>
+    <a [routerLink]="['/profile/', loggedInUsername]">Profile</a>
+    <a [routerLink]="'/'" (click)="logout()">Logout</a>
+  </div>
+</mat-toolbar>

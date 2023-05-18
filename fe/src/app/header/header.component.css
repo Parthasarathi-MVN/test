@@ -1,0 +1,20 @@
+/* ANGULAR MATERIAL */
+.navbar {
+  justify-content: space-between;
+}
+span {
+  padding-right: 1rem;
+}
+a {
+  padding-right: 1rem;
+  text-decoration: none;
+  color: bisque;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+.active-span {
+  background-color: red;
+}

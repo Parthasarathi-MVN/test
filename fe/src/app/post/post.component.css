@@ -1,0 +1,13 @@
+.example-card {
+  width: 1000px;
+  height: 100%;
+  margin: 1rem;
+  background-color: blanchedalmond;
+}
+
+/* This is to center the card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
